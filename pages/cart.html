@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Import de la police Railway -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- L'ordre d'import des fichiers de style est important : en cas d'égalité sur le ciblage de l'élement, c'est le dernier style défini qui s'applique ! -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <!-- Bonne pratique, on notre fichier de style personnalisé en dernier -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <title>oFig</title>
+</head>
+<body>
+  
+    <header class="header">
+      <h1 class="header__title"><strong class="header__title--big">oFig</strong>Figurines et statuettes</h1>
+      <h2 class="header__subtitle">Votre panier <em class="header__subtitle--italic">2 produits</em></h2>
+    </header>
+
+    <main>
+        <section class="livraison">
+            <h1 class="product__name">Préférences de livraison</h1>
+        
+            
+              <div>
+                <form>
+                <fieldset>
+                  <legend>Où souhaitez-vous être livré ?</legend>
+                  
+                  <div class="livraison">
+                    
+        
+                    <input type="radio" name="adress" id="home" value="home" checked>
+                    <label for="home">Mon adresse courante</label>
+        
+                    <input type="radio" name="adress" id="other" value="other">
+                    <label for="other">Autre adresse</label>
+                  </div>
+                </div>
+
+                  <div class="options">
+                    <legend>Options</legend>
+                    <input type="checkbox" name="suivie" id="sms" value="sms" checked>
+                    <label for="sms">Suivi de livraison pas sms (inclu)</label>
+
+                    <input type="checkbox" name="suivie" id="sour" value="sour">
+                    <label for="sour">Satisfait ou remboursé (+2 euros)</label>
+
+                    <input type="checkbox" name="suivie" id="extgar" value="extgar">
+                    <label for="extgar">Garantie 2 ans (+10 euros)</label>
+                  </div>
+        
+                  <div>
+                    <label for="street">Rue</label>
+                    <input type="text" id="street" name="street">
+                  </div>
+        
+                  <div>
+                    <label for="postal-code">Code postal</label>
+                    <input type="text" id="postal-code" name="postal-code">
+                  </div>
+                  <div>
+                    <label for="city">Ville</label>
+                    <input type="text" id="city" name="city">
+                  </div>
+        <fieldset>
+            <legend>Informations complémentaires</legend>
+            <div>
+                <label for="message">interphone, bâtiment, etc.</label>
+                <textarea name="message" id="message" rows="4"></textarea>
+              </div>
+        </fieldset>
+                 <!-- 
+                  <div class="livraison">
+                    <span>Où souhaitez-vous être livré ?</span>
+        
+                    <input type="radio" name="adress" id="home" value="home" checked>
+                    <label for="home">Mon adresse courante</label>
+        
+                    <input type="radio" name="adress" id="other" value="other">
+                    <label for="other">Autre adresse</label>
+                  </div>-->
+                </fieldset>
+        
+                
+              </form>
+    </main>
+  
+  
+  <footer class="footer">
+    <p>oFig - toutes les images sont sous copyright SquareEnix</p>
+  </footer>
+</body>
+</html>
+
+<!--
+    <div>
+                    <label for="source">J'ai connu ce site grâce à :</label>
+                    <select name="source" id="source" >
+                      <option value="" disabled>choisir</option>
+                      <option value="mdn">MDN</option>
+                      <option value="stackoverflow">Stackoverflow</option>
+                      <option value="google">Google</option>
+                    </select>
+                  </div>
+                !-->

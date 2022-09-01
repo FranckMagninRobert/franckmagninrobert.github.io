@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 a {
@@ -17,7 +17,7 @@ a {
 
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.6rem; /* 16px */
 
   height: 100vh;
   display: flex;
@@ -34,21 +34,28 @@ body {
 }
 
 .header__title {
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.0rem;
   background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.header__title img {
+  color: white;
 }
 
 .header__title--big {
-  font-size: 40px;
+  font-size: 4.0rem;
   font-weight: 500;
-  margin-right: 10px;
+  margin-right: 1.0rem;
 }
 
 .header__subtitle {
   text-align: center;
   background-color: var(--color-diabolus-grey);
   font-size: 1.8rem;
-  padding: 10px 0;
+  padding: 1.0rem 0;
   font-weight: 200;
 }
 
@@ -61,30 +68,30 @@ body {
   color: var(--color-white);
   background-color: var(--color-diabolus-grey);
   text-align: center;
-  padding: 5px 0 10px 0;
+  padding: 0.5rem 0 1.0rem 0;
   width: 100%;
 }
 
 .product-list {
-  padding: 10px 0;
+  padding: 1.0rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .product {
-  width: 250px;
+  width: 25.0rem;
   border: solid var(--color-light-grey) 1px;
-  padding: 10px;
-  margin: 10px;
+  padding: 1.0rem;
+  margin: 1.0rem;
   position: relative;
   cursor: pointer;
 }
 
 .product:hover {
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px, rgba(17, 17, 26, 0.1) 0 24px 8.0rem;
   /* Compatibilité avec Safari */
-  --webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  --webkit-box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px, rgba(17, 17, 26, 0.1) 0 24px 8.0rem;
 }
 
 .product__image {
@@ -99,21 +106,21 @@ body {
 }
 
 .product__reduction-tag {
-  border: 5px solid var(--color-light-grey);
+  border0.5rem solid var(--color-light-grey);
   border-radius: 100%;
   background-color: var(--color-diabolus-grey);
   color: var(--color-white);
   font-size: 2rem;
-  width: 60px;
-  height: 60px;
+  width: 6.0rem;
+  height: 6.0rem;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 600;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 1.0rem;
+  right: 1.0rem;
 }
 
 /* Objectif, je veux déclencher l'animation sur la REDUCTION lorsque je survole l'article */
@@ -124,13 +131,13 @@ body {
 
 .product__game-name {
   color: var(--color-light-grey);
-  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--color-light-grey);
 }
 
 .product__name {
   font-size: 2rem;
-  margin: 20px 0;
+  margin: 2.0rem 0;
   font-weight: 600;
 }
 
@@ -142,8 +149,8 @@ body {
   font-size: 1.15rem;
 
   background-color: var(--color-red);
-  padding: 20px;
-  margin-top: 30px;
+  padding: 2.0rem;
+  margin-top: 3.0rem;
   color: var(--color-white);
 }
 
@@ -154,7 +161,7 @@ body {
 
 .product__price--reducted {
   text-decoration: line-through;
-  margin-right: 5px;
+  margin-right: 0.5rem;
 }
 
 .product__price {
@@ -162,12 +169,141 @@ body {
   font-size: 1.4em;
 }
 
-.livraison {
- display: flex;
- background-color: #f0f;
- flex-flow: column;
-  
+/* Form */
+
+form {
+  width: 70%;
+  margin: 0 auto;
 }
-main {
-  height: inherit;
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 3.0rem 0 5.0rem 0;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.0rem;
+}
+
+fieldset > div {
+  margin-bottom: 0.5rem;
+}
+
+legend {
+  color: var(--color-diabolus-grey);
+  font-size: 1.8rem;
+  margin-bottom: 2.0rem;
+  font-weight: 600;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Bonus, ciblé des éléments par leur attributs/valeurs ! */
+input[type="text"], label[for="delivery-complementary-info"] {
+  margin-bottom: 1.0rem;
+}
+
+.price-banner-container {
+  padding: 2.0rem;
+  border-top: 1px var(--color-light-grey) solid;
+  margin-top: 2.0rem;
+}
+
+.price-banner {
+  padding: 4.0rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-banner .price {
+  font-size: 2.5rem;
+  color: var(--color-red);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px var(--color-light-grey) solid;
+  border-bottom: 1px var(--color-light-grey) solid;
+  padding: 2.0rem;
+  flex-wrap: wrap;
+  row-gap: 2.0rem;
+  column-gap: 2.0rem; 
+  /* gap: 2.0rem; shortcut */
+}
+
+.button {
+  padding: 2.0rem 3.0rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  border: none;
+  text-align: center;
+  flex-grow: 1;
+  max-width: 25.0rem;
+  box-sizing: border-box;
+}
+
+.button--grey {
+  color: black;
+  background-color: var(--color-light-grey);
+}
+
+.button--red {
+  color: var(--color-white);
+  background-color: var(--color-red);
+}
+
+/* On cible les 'div' enfants du 'form' mais également les petits enfants, etc...*/
+/* form div {} */
+
+/* On cible seulement les 'div' enfants DIRECT */
+/* form > div {} */
+
+
+/* Tableau */
+
+table {
+  width: 100%; 
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+thead {
+  border-bottom: 1px var(--color-light-grey) solid;
+}
+
+th, tfoot {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+td, th {
+  padding: 1.0rem;
+  text-align: center;
+}
+
+/* Encore une fois, c'est du bonus, on aurait très bien pu mettre une classe sur le fameux td, et cibler la classe directement. */
+tfoot td:last-child {
+  color: var(--color-red);
+  font-size: 2.5rem;
+}
+
+td input {
+  width: 3.0rem;
+  margin-right: 1.0rem;
+}
+
+td a {
+  color: var(--color-red);
+  font-size: 1.3rem;
+  text-decoration: underline;
 }

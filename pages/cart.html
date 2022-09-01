@@ -15,99 +15,136 @@
   <!-- Bonne pratique, on notre fichier de style personnalisé en dernier -->
   <link rel="stylesheet" href="../css/style.css">
 
-  <title>oFig</title>
+  <title>oFig | Mon panier</title>
 </head>
 <body>
-  
+  <div>
     <header class="header">
-      <h1 class="header__title"><strong class="header__title--big">oFig</strong>Figurines et statuettes</h1>
-      <h2 class="header__subtitle">Votre panier <em class="header__subtitle--italic">2 produits</em></h2>
+      <div class="header__title">
+        <h1><strong class="header__title--big">oFig</strong>Figurines et statuettes</h1>
+        <a href="../pages/cart.html">
+          <img src="../images/cart.svg" alt="Cart">
+        </a>
+      </div>
+      <h2 class="header__subtitle">Figures sur le thème <em class="header__subtitle--italic">Final Fantasy</em></h2>
     </header>
 
     <main>
-        <section class="livraison">
-            <h1 class="product__name">Préférences de livraison</h1>
-        
-            
-              <div>
-                <form>
-                <fieldset>
-                  <legend>Où souhaitez-vous être livré ?</legend>
-                  
-                  <div class="livraison">
-                    
-        
-                    <input type="radio" name="adress" id="home" value="home" checked>
-                    <label for="home">Mon adresse courante</label>
-        
-                    <input type="radio" name="adress" id="other" value="other">
-                    <label for="other">Autre adresse</label>
-                  </div>
-                </div>
+      <form>
+        <h3>Votre panier</h3>
 
-                  <div class="options">
-                    <legend>Options</legend>
-                    <input type="checkbox" name="suivie" id="sms" value="sms" checked>
-                    <label for="sms">Suivi de livraison pas sms (inclu)</label>
+        <table>
+          <thead>
+            <tr>
+              <th>Figurine</th>
+              <th>Prix unitaire</th>
+              <th>Quantité</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cloud Strife</td>
+              <td>59 €</td>
+              <td><input type="number" value="1" min="0" step="10" name="quantity-cloud"><a href="#">supprimer</a></td>
+            </tr>
+            <tr>
+              <td>Tifa Lockhart</td>
+              <td>69 €</td>
+              <td><input type="number" value="1" min="0" step="10" name="quantity-tifa"><a href="#">supprimer</a></td>
+            </tr>
+            <tr>
+              <td>Barret Wallace</td>
+              <td>69 €</td>
+              <td><input type="number" value="1" min="0" step="10" name="quantity-barret"><a href="#">supprimer</a></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Total de la commande</td>
+              <td>197 €</td>
+            </tr>
+          </tfoot>
+        </table>
 
-                    <input type="checkbox" name="suivie" id="sour" value="sour">
-                    <label for="sour">Satisfait ou remboursé (+2 euros)</label>
 
-                    <input type="checkbox" name="suivie" id="extgar" value="extgar">
-                    <label for="extgar">Garantie 2 ans (+10 euros)</label>
-                  </div>
-        
-                  <div>
-                    <label for="street">Rue</label>
-                    <input type="text" id="street" name="street">
-                  </div>
-        
-                  <div>
-                    <label for="postal-code">Code postal</label>
-                    <input type="text" id="postal-code" name="postal-code">
-                  </div>
-                  <div>
-                    <label for="city">Ville</label>
-                    <input type="text" id="city" name="city">
-                  </div>
-        <fieldset>
-            <legend>Informations complémentaires</legend>
-            <div>
-                <label for="message">interphone, bâtiment, etc.</label>
-                <textarea name="message" id="message" rows="4"></textarea>
-              </div>
-        </fieldset>
-                 <!-- 
-                  <div class="livraison">
-                    <span>Où souhaitez-vous être livré ?</span>
-        
-                    <input type="radio" name="adress" id="home" value="home" checked>
-                    <label for="home">Mon adresse courante</label>
-        
-                    <input type="radio" name="adress" id="other" value="other">
-                    <label for="other">Autre adresse</label>
-                  </div>-->
-                </fieldset>
-        
-                
-              </form>
-    </main>
+        <h3>Préférences de livraison</h3>
+
+        <div class="form-container">
+          <div>
+            <fieldset>
+              <legend>Où souhaitez-vous être livré ?</legend>
   
+              <div>
+                <input type="radio" name="delivery-location" id="current-address" value="current-address" checked>
+                <label for="current-address">Mon adresse courante</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="delivery-location" id="other-address" value="other-address">
+                <label for="other-address">Autre adresse</label>
+              </div>
+            </fieldset>
+  
+            <fieldset>
+              <legend>Options</legend>
+  
+              <div>
+                <input type="checkbox" name="delivery-options-sms-tracking" id="delivery-options-sms-tracking" checked>
+                <label for="delivery-options-sms-tracking">Suivi de livraison par sms (inclus)</label>
+              </div>
+  
+              <div>
+                <input type="checkbox" name="delivery-options-refund" id="delivery-options-refund">
+                <label for="delivery-options-refund">Satisfait ou remboursé (+ 2 euros)</label>
+              </div>
+  
+              <div>
+                <input type="checkbox" name="delivery-options-warranty" id="delivery-options-warranty">
+                <label for="delivery-options-warranty">Grantie 2 ans (+ 10 euros)</label>
+              </div>
+            </fieldset>
+          </div>
+          
+          <div>
+            <fieldset>
+              <legend>Adresse</legend>
+  
+              <label for="delivery-address-road">Rue</label>
+              <input type="text" name="delivery-address-road" id="delivery-address-road">
+  
+              <label for="delivery-address-zip">Code postal</label>
+              <input type="text" name="delivery-address-zip" id="delivery-address-zip">
+  
+              <label for="delivery-address-city">Ville</label>
+              <input type="text" name="delivery-address-city" id="delivery-address-city">
+            </fieldset>
+  
+            <fieldset>
+              <legend>Informations complémentaires</legend>
+              <label for="delivery-complementary-info">Interphone, bâtiment, etc...</label>
+              <textarea name="delivery-complementary-info" id="delivery-complementary-info" rows="3"></textarea>
+            </fieldset>
+          </div>
+          
+        </div>
+
+        <div class="price-banner-container">
+          <div class="price-banner">
+            <span>Montant total à régler :</span>
+            <span class="price">197 €</span>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <a class="button button--grey" href="/">Continuer vos achats</a>
+          <input class="button button--red" type="submit" value="Valider et payer">
+        </div>
+      </form>
+    </main>
+  </div>
   
   <footer class="footer">
     <p>oFig - toutes les images sont sous copyright SquareEnix</p>
   </footer>
 </body>
 </html>
-
-<!--
-    <div>
-                    <label for="source">J'ai connu ce site grâce à :</label>
-                    <select name="source" id="source" >
-                      <option value="" disabled>choisir</option>
-                      <option value="mdn">MDN</option>
-                      <option value="stackoverflow">Stackoverflow</option>
-                      <option value="google">Google</option>
-                    </select>
-                  </div>
-                !-->

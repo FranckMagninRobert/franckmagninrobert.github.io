@@ -1,0 +1,205 @@
+body {
+    background-color: black;
+    display: flex;
+    /*align-items: center;*/
+    /*flex-wrap: wrap;*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+    width: 100vw;*/
+}
+.div__head {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-image: url("../images/nicole.jpg");
+    background-repeat: no-repeat;
+    position: sticky ;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    /*height: 100%;*/
+    justify-content: space-between;
+    padding: 30px 25px 15px 25px;
+    height: 100vh;
+}
+
+.div__head__header {
+    display: flex;
+    align-items: start;
+    /*margin-right: 200px;*/
+    padding-right: 250px;
+    max-width: 145px;
+    /*box-sizing: content-box;
+width: 100%;*/
+}
+.svg {
+
+}
+.header__title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    padding-left: 10px;    
+ }
+/*.div__header__h2{
+    display: flex;
+}*/
+.div__content {
+    color: white;
+    font-size: 1.2em;
+     padding: 20px 10px 20px 40px;
+   /*opacity: 0.15;*/
+   background: rgb(197, 197, 197);
+   background:rgba(255, 255, 255, 0.178);
+}
+.content__h2 {
+    text-align: right;
+    font-size: 1.4em;
+    font-weight: bold;
+     /* offset-x | offset-y | blur-radius | color */
+text-shadow: 1px 1px 25px black;   
+}
+.content__h2--italic{
+    font-weight: 100;
+    font-style: italic;
+    font-size: 0.7em;
+    text-shadow: 1px 1px 25px black;   
+ 
+
+    
+    
+    
+
+}
+.content__h2__txt {
+    color: white;
+    font-size: 0.8em;
+    text-align: right;
+    line-height: 1.4em;
+    padding: 10px 20px 5px 0;
+}
+
+.foot {
+    display: flex;
+    justify-content: right;
+
+    /*background-color: crimson;*/
+    width: 100%;
+    color: white;
+    text-shadow: white 1px 0 10px;
+}
+.foot_contact {
+    padding-left: 15px;
+}
+    
+.foot_mention {
+    padding-left: 15px;
+}
+
+main {
+    background-color:#f9f9f9;;
+    width: 50%;
+}
+.main__h1 {
+    
+    /*text-align: left;*/
+    font-size: 1.7em;
+    font-weight: bold;
+    /*height: 89px;*/
+    padding: 25px 0 25px 40px;
+    text-shadow: rgb(90, 90, 90) 1px 1px 1px 1px;
+    border-bottom: 1px solid;
+    border-color: #eaeaea;*
+        
+}
+/*ul li {
+    background-color: blueviolet;
+}*/
+.main__ul {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.main__li{
+width: 50%;
+border-right: 1px solid #eaeaea;
+border-bottom: 1px solid #eaeaea;
+background-color: white;
+padding: 25px 25px;
+text-align: left;
+
+}
+.main__a {
+    color: #007bff;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 0.94em;
+}
+
+.tag__news {
+    color: white;
+    background-color: #98dc62;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: fit-content;
+    padding: 7px 7px 7px 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+}
+
+.tag__team {
+    color: white;
+    background-color: #dc5e53;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: fit-content;
+    padding: 7px 7px 7px 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.tag__work {
+    color: white;
+    background-color: #0766f0;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: fit-content;
+    padding: 7px 7px 7px 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.main__li__h1 {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 25px 0;
+    text-shadow: rgb(90, 90, 90) 1px 1px 1px 1px;
+}
+.main_author {
+    display: flex;
+    align-items: center;
+}
+
+.tag_author {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-left: 10px;
+    
+}
+.tag_author--light {
+font-size: 0.9em;
+    font-weight: lighter;
+    color: #9c9999;
+}
+.main__p {
+padding: 20px 0 35px 0;
+line-height: 1.3em;
+}
+
+.fit {
+    width: 26px;
+    height: 26px;
+}

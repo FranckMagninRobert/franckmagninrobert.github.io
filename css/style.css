@@ -1,309 +1,219 @@
-:root {
-  --color-red: #c80000;
-  --color-diabolus-grey: #666;
-  --color-light-grey: #ccc;
-  --color-black: black;
-  --color-white: white;
-}
-
 html {
-  font-size: 62.5%;
-}
+    font-size: 62.5%;
+    font-family: OpenSans-Regular;
 
-a {
-  color: inherit;
-  text-decoration: none;
 }
-
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.6rem; /* 16px */
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+}
+header {
+    display: flex;
+    background-color: #324158;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header {
-  color: var(--color-white);
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1; /* Le plus "haut" sur l'axe des z (qui vient vers nous) => on est au dessus de 0, donc notre header va se positionner à coup sûr au dessus des articles */ 
+header h1 {
+    /*background-color: aquamarine;*/
+    color: aliceblue;
+    font-family: OpenSans-ExtraBold;
+    font-size: 2rem;
+    /*padding-right: 12rem;*/
+    margin-left: 2rem;
 }
 
-.header__title {
-  display: flex;
-  justify-content: space-between;
-  padding: 2.0rem;
-  background-color: var(--color-red);
-  color: var(--color-white);
+.header_svg {
+    display: flex;
+    padding-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
 }
 
-.header__title img {
-  color: white;
+ul {
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-.header__title--big {
-  font-size: 4.0rem;
-  font-weight: 500;
-  margin-right: 1.0rem;
+/*nav ul li a {
+    background-color: burlywood;
+    font-family: OpenSans-Bold;
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding: 1.6rem 1.6rem;
+    text-transform: capitalize;
+}*/
+
+.nav-item {
+    font-family: OpenSans-Bold;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 1.4rem 1.4rem;
+    /*background-color: #ddd;*/
+    /*margin-top: 5px;
+    padding: 10px 10px;*/
+    border-radius: 5px;
+    transition-property: background-color, color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    color: aliceblue;
+    
+}
+a {
+    color: aliceblue;
 }
 
-.header__subtitle {
-  text-align: center;
-  background-color: var(--color-diabolus-grey);
-  font-size: 1.8rem;
-  padding: 1.0rem 0;
-  font-weight: 200;
+svg {
+    /*position: sticky;*/
+    width: 8rem;
+    height: 8rem;
+
 }
 
-.header__subtitle--italic {
-  font-style: italic;
+.nav-item:hover {
+    background-color: #417485;
+    color: aliceblue;
+  }
+
+ul li:nth-child(4n) {
+    text-transform: uppercase;
+
+}
+
+main {
+    background-color: #f0f;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.accueil {
+    background: linear-gradient(0.25turn, #417485,#fcc8a0);
+    width: 100%;
+    /*height: 25%;*/
+    text-align: center;
+    
+}
+
+.accueil h1 {
+    padding-top: 6rem;
+    font-family: OpenSans-Bold;
+    font-size: 1.5rem;
+    color: aliceblue;
+
+}
+
+.carousel__slide h1 {
+    padding-top: 0;
+    font-family: OpenSans-Bold;
+    font-size: 3rem;
+    color: aliceblue;
+  /*font-size: 50px;*/
+  /*line-height: 50px;*/
+  /*color: #fafafa;*/
+  /*position: absolute;*/
+  /*top: 50%;*/
+  /*width: 100%;*/
+  /*text-align: center;*/
+  /*margin-top: -25px;*/
+}
+
+.carousel_slide--plight {
+    font-family: OpenSans-Regular;
+    font-size: 1.5rem;
+    color: aliceblue;
+
+}
+
+.carousel_slide--pregular {
+    font-family: OpenSans-Regular;
+    font-size: 2.5rem;
+    color: aliceblue;
+    padding-bottom: 2rem;
+
+}
+.video {
+    width: 100%;
+    /*margin: 0 auto;*/
+    background-color: white;
+    display: flex;
+
+}
+
+article {
+    text-align: center;
+    padding: 6rem 6rem;
+    width: 50%;
+
+}
+
+
+h2 {
+    font-family: OpenSans-Bold;
+    color: black;
+    font-size: 2.2rem;
+    padding: 2rem 2rem;
+
+
+
+}
+
+p {
+    font-size: 1.8rem;
+    padding: 2rem 2rem;
+    line-height: 2rem;
+
+
+}
+
+button {
+  border: 1px solid black;
+  background-color: white;
+  font-family: OpenSans-Regular;
   font-size: 2rem;
+  padding: 1rem 1rem;
+
 }
 
-.footer {
-  color: var(--color-white);
-  background-color: var(--color-diabolus-grey);
-  text-align: center;
-  padding: 0.5rem 0 1.0rem 0;
-  width: 100%;
+.block_video {
+    /*background-color: aquamarine;*/
+    background-image: url("../images/blockvid.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    /*height: 100%;*/
 }
 
-.product-list {
-  padding: 1.0rem 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.dates {
+    margin: 0 auto;
 }
 
-.product {
-  width: 25.0rem;
-  border: solid var(--color-light-grey) 1px;
-  padding: 1.0rem;
-  margin: 1.0rem;
-  position: relative;
-  cursor: pointer;
+.faq {
+    margin: 0 auto;
+
 }
 
-.product:hover {
-  box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px, rgba(17, 17, 26, 0.1) 0 24px 8.0rem;
-  /* Compatibilité avec Safari */
-  --webkit-box-shadow: rgba(17, 17, 26, 0.1) 0 8px 24px, rgba(17, 17, 26, 0.1) 0 16px 56px, rgba(17, 17, 26, 0.1) 0 24px 8.0rem;
+.contact {
+    margin: 0 auto;
+
 }
 
-.product__image {
-  width: 100%;
+
+
+
+
+footer {
+    
+    background-color: #324158;
+    color: aliceblue;
+    text-align: center;
+    /*padding: 1rem 1rem;*/
 }
 
-@keyframes tilt {
-  0%  { transform: rotate(0deg); }
-  25% { transform: rotate(30deg); }
-  50% { transform: rotate(-30deg); }
-  100%  { transform: rotate(0deg); }
-}
-
-.product__reduction-tag {
-  border0.5rem solid var(--color-light-grey);
-  border-radius: 100%;
-  background-color: var(--color-diabolus-grey);
-  color: var(--color-white);
-  font-size: 2rem;
-  width: 6.0rem;
-  height: 6.0rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  position: absolute;
-  top: 1.0rem;
-  right: 1.0rem;
-}
-
-/* Objectif, je veux déclencher l'animation sur la REDUCTION lorsque je survole l'article */
-
-.product:hover .product__reduction-tag {
-  animation: tilt 0.8s infinite;
-}
-
-.product__game-name {
-  color: var(--color-light-grey);
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--color-light-grey);
-}
-
-.product__name {
-  font-size: 2rem;
-  margin: 2.0rem 0;
-  font-weight: 600;
-}
-
-.product__footer {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-
-  font-size: 1.15rem;
-
-  background-color: var(--color-red);
-  padding: 2.0rem;
-  margin-top: 3.0rem;
-  color: var(--color-white);
-}
-
-.product__prices {
-  display: flex;
-  align-items: end;
-}
-
-.product__price--reducted {
-  text-decoration: line-through;
-  margin-right: 0.5rem;
-}
-
-.product__price {
-  font-weight: 600;
-  font-size: 1.4em;
-}
-
-/* Form */
-
-form {
-  width: 70%;
-  margin: 0 auto;
-}
-
-h3 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 3.0rem 0 5.0rem 0;
-}
-
-fieldset {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2.0rem;
-}
-
-fieldset > div {
-  margin-bottom: 0.5rem;
-}
-
-legend {
-  color: var(--color-diabolus-grey);
-  font-size: 1.8rem;
-  margin-bottom: 2.0rem;
-  font-weight: 600;
-}
-
-.form-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* Bonus, ciblé des éléments par leur attributs/valeurs ! */
-input[type="text"], label[for="delivery-complementary-info"] {
-  margin-bottom: 1.0rem;
-}
-
-.price-banner-container {
-  padding: 2.0rem;
-  border-top: 1px var(--color-light-grey) solid;
-  margin-top: 2.0rem;
-}
-
-.price-banner {
-  padding: 4.0rem;
-  font-weight: 600;
-  font-size: 1.8rem;
-  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.price-banner .price {
-  font-size: 2.5rem;
-  color: var(--color-red);
-}
-
-.buttons {
-  display: flex;
-  justify-content: space-around;
-  border-top: 1px var(--color-light-grey) solid;
-  border-bottom: 1px var(--color-light-grey) solid;
-  padding: 2.0rem;
-  flex-wrap: wrap;
-  row-gap: 2.0rem;
-  column-gap: 2.0rem; 
-  /* gap: 2.0rem; shortcut */
-}
-
-.button {
-  padding: 2.0rem 3.0rem;
-  font-weight: 600;
-  font-size: 1.8rem;
-  border: none;
-  text-align: center;
-  flex-grow: 1;
-  max-width: 25.0rem;
-  box-sizing: border-box;
-}
-
-.button--grey {
-  color: black;
-  background-color: var(--color-light-grey);
-}
-
-.button--red {
-  color: var(--color-white);
-  background-color: var(--color-red);
-}
-
-/* On cible les 'div' enfants du 'form' mais également les petits enfants, etc...*/
-/* form div {} */
-
-/* On cible seulement les 'div' enfants DIRECT */
-/* form > div {} */
-
-
-/* Tableau */
-
-table {
-  width: 100%; 
-  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
-}
-
-thead {
-  border-bottom: 1px var(--color-light-grey) solid;
-}
-
-th, tfoot {
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-
-td, th {
-  padding: 1.0rem;
-  text-align: center;
-}
-
-/* Encore une fois, c'est du bonus, on aurait très bien pu mettre une classe sur le fameux td, et cibler la classe directement. */
-tfoot td:last-child {
-  color: var(--color-red);
-  font-size: 2.5rem;
-}
-
-td input {
-  width: 3.0rem;
-  margin-right: 1.0rem;
-}
-
-td a {
-  color: var(--color-red);
-  font-size: 1.3rem;
-  text-decoration: underline;
+footer p {
+    font-size: 1.3rem;
 }

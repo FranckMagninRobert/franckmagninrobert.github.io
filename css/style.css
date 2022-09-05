@@ -5,8 +5,16 @@ html {
 }
 body {
     display: flex;
-    height: 100vh;
+    /*height: 100vh;*/
     flex-direction: column;
+
+}
+
+body>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(0.25turn, #417485,#fcc8a0);
 
 }
 header {
@@ -14,6 +22,7 @@ header {
     background-color: #324158;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 header h1 {
@@ -35,6 +44,7 @@ header h1 {
 ul {
     display: flex;
     flex-wrap: wrap;
+    padding-right: 3rem;
 
 }
 
@@ -51,7 +61,8 @@ ul {
     font-family: OpenSans-Bold;
     font-size: 1.5rem;
     text-transform: capitalize;
-    padding: 1.4rem 1.4rem;
+    padding: 1rem 1rem;
+    margin: 0.4rem 0.4rem;
     /*background-color: #ddd;*/
     /*margin-top: 5px;
     padding: 10px 10px;*/
@@ -84,15 +95,20 @@ ul li:nth-child(4n) {
 }
 
 main {
-    background-color: #f0f;
+    
+    /*background-color: #f0f;*/
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     flex-wrap: wrap;
-    height: 100%;
+    /*height: 100%;*/
+    /*height: calc(100% - 82px);*/
+    justify-content: center;
+    max-width: 900px;
+    
 }
 
 .accueil {
-    background: linear-gradient(0.25turn, #417485,#fcc8a0);
+    /*background: linear-gradient(0.25turn, #417485,#fcc8a0);*/
     width: 100%;
     /*height: 25%;*/
     text-align: center;
@@ -137,20 +153,39 @@ main {
 
 }
 .video {
-    width: 100%;
-    /*margin: 0 auto;*/
+   
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
+    /*max-width: 80%;*/
+    /*max-width: calc(100% - 82px);*/
+    justify-content: center;
+    max-width: 900px;
+/*    grid-template-columns: auto auto auto auto;*/
+/*    flex-wrap: wrap;*/
+/*    grid: repeat(2, 1fr) / auto-flow 1fr;*/
+   
+
 
 }
 
+/*.grid {
+
+}*/
 article {
     text-align: center;
     padding: 6rem 6rem;
     width: 50%;
 
 }
-
+.grid > article {
+    background-color: #8ca0ff;
+    width: 1fr;
+    height: 1fr;
+    text-align: center;
+    padding: 6rem 6rem;
+    /*width: 50%;*/
+  }
 
 h2 {
     font-family: OpenSans-Bold;
@@ -181,24 +216,35 @@ button {
 
 .block_video {
     /*background-color: aquamarine;*/
-    background-image: url("../images/blockvid.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    /*height: 100%;*/
+    background-color: #324158;
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    width: 25rem;
+    height: 25rem;
 }
 
+.block_video2 {
+    /*background-color: aquamarine;*/
+    background-color: #417485;
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    width: 25rem;
+    height: 25rem;
+}
 .dates {
     margin: 0 auto;
+    
 }
 
 .faq {
     margin: 0 auto;
+   
 
 }
 
 .contact {
     margin: 0 auto;
+    
 
 }
 

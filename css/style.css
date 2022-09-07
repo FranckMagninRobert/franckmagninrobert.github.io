@@ -24,6 +24,11 @@ header {
     align-items: center;
     width: 100%;
 }
+.header_contener {
+    display: flex;
+    align-items: center;
+}
+   
 
 header h1 {
     /*background-color: aquamarine;*/
@@ -31,13 +36,14 @@ header h1 {
     font-family: OpenSans-ExtraBold;
     font-size: 2rem;
     /*padding-right: 12rem;*/
-    margin-left: 2rem;
+    /*margin-left: 2rem;*/
+    line-height: 3rem;
 }
 
 .header_svg {
     display: flex;
     padding-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     align-items: center;
 }
 

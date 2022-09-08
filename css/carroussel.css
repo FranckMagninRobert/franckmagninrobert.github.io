@@ -159,8 +159,8 @@
   text-align: center;
 }
 .carousel__indicator {
-  height: 15px;
-  width: 15px;
+  height: 1.2rem;
+  width: 1.2rem;
   border-radius: 100%;
   display: inline-block;
   z-index: 2;

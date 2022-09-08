@@ -167,7 +167,10 @@ main {
 /*    grid-template-columns: auto auto auto auto;*/
 /*    flex-wrap: wrap;*/
 /*    grid: repeat(2, 1fr) / auto-flow 1fr;*/
-   
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
 
 
 }
@@ -177,7 +180,7 @@ main {
 }*/
 article {
     text-align: center;
-    padding: 6rem 6rem;
+    padding-bottom: 5rem;
     width: 50%;
 
 }
@@ -200,7 +203,7 @@ h2 {
 
 }
 
-p {
+article p {
     font-size: 1.8rem;
     padding: 2rem 2rem;
     line-height: 2rem;
@@ -222,8 +225,8 @@ button {
     background-color: #324158;
     /*background-size: cover;*/
     /*background-position: center;*/
-    width: 25rem;
-    height: 25rem;
+    width: 50%;
+    height: 50%;
 }
 
 .block_video2 {
@@ -231,8 +234,8 @@ button {
     background-color: #417485;
     /*background-size: cover;*/
     /*background-position: center;*/
-    width: 25rem;
-    height: 25rem;
+    width: 50%;
+    height: 50%;
 }
 .dates {
     margin: 0 auto;

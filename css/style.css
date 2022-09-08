@@ -7,14 +7,33 @@ body {
     display: flex;
     /*height: 100vh;*/
     flex-direction: column;
+ 
+        background: linear-gradient(0.40turn, #417485, #fcc8a0 );
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+    }
 
-}
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    
+
 
 body>div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(0.25turn, #417485,#fcc8a0);
+   /* background: linear-gradient(0.25turn, #417485,#fcc8a0);*/
 
 }
 header {
@@ -35,9 +54,10 @@ header h1 {
     color: aliceblue;
     font-family: OpenSans-ExtraBold;
     font-size: 2rem;
-    /*padding-right: 12rem;*/
+    padding-right: 2rem;
     /*margin-left: 2rem;*/
     line-height: 3rem;
+    z-index: 1;
 }
 
 .header_svg {
@@ -45,6 +65,7 @@ header h1 {
     padding-left: 2rem;
     margin-right: 1.5rem;
     align-items: center;
+    z-index: 1;
 }
 
 ul {
@@ -269,3 +290,61 @@ footer {
 footer p {
     font-size: 1.3rem;
 }
+
+.heart-rate {
+    width: 150px;
+    height: 73px;
+    position: relative;
+    margin: 20px auto;
+  }
+
+
+  .fade-in {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #324158;
+    top: 0;
+    right: 0;
+    animation: heartRateIn 2.5s linear infinite;
+  }
+
+  .fade-out {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -120%;
+    animation: heartRateOut 2.5s linear infinite;
+    background: rgba(50, 65, 88, 1);
+    background: -moz-linear-gradient(left, rgba(50, 65, 88, 1) 0%, rgba(50, 65, 88, 1) 50%, rgba(50, 65, 88, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(50, 65, 88, 1) 0%, rgba(50, 65, 88, 1) 50%, rgba(50, 65, 88, 0) 100%);
+    background: -o-linear-gradient(left, rgba(50, 65, 88, 1) 0%, rgba(50, 65, 88, 1) 50%, rgba(50, 65, 88, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(50, 65, 88, 1) 0%, rgba(50, 65, 88, 1) 50%, rgba(50, 65, 88, 0) 100%);
+    background: linear-gradient(to right, rgba(50, 65, 88, 1) 0%, rgba(50, 65, 88, 1) 80%, rgba(50, 65, 88, 0) 100%);
+  }
+
+  @keyframes heartRateIn {
+    0% {
+      width: 100%;
+    }
+    50% {
+      width: 0;
+    }
+    100% {
+      width: 0;
+    }
+  }
+   
+  @keyframes heartRateOut {
+    0% {
+      left: -120%;
+    }
+    30% {
+      left: -120%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+

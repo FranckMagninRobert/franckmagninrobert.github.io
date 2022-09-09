@@ -11,7 +11,7 @@ body {
         background: linear-gradient(0.40turn, #417485, #fcc8a0 );
         background-size: 350% 350%;
         animation: gradient 25s ease infinite;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     
@@ -42,6 +42,9 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1
 }
 .header_contener {
     display: flex;
@@ -119,24 +122,16 @@ ul li:nth-child(4n) {
 }
 
 main {
-    
-    /*background-color: #f0f;*/
-    display: flex;
-    /*flex-direction: column;*/
+    display: flex;  
     flex-wrap: wrap;
-    /*height: 100%;*/
-    /*height: calc(100% - 82px);*/
     justify-content: center;
-    max-width: 900px;
+    max-width: 1000px;
     
 }
 
 .accueil {
     /*background: linear-gradient(0.25turn, #417485,#fcc8a0);*/
     width: 100%;
-    /*height: 25%;*/
-    text-align: center;
-    
 }
 
 .accueil h1 {
@@ -166,6 +161,7 @@ main {
     font-family: OpenSans-Regular;
     font-size: 1.5rem;
     color: aliceblue;
+    line-height: 2rem;
 
 }
 
@@ -178,48 +174,30 @@ main {
 }
 .video {
    
-    /*background-color: white;*/
     display: flex;
-    flex-wrap: wrap;
-    /*max-width: 80%;*/
-    /*max-width: calc(100% - 82px);*/
-    justify-content: center;
-    max-width: 900px;
-/*    grid-template-columns: auto auto auto auto;*/
-/*    flex-wrap: wrap;*/
-/*    grid: repeat(2, 1fr) / auto-flow 1fr;*/
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: stretch;
-    align-items: center;
-
+    margin: 3rem 4.5rem;
 
 }
 
-/*.grid {
+.video_container {
+    display: contents;
 
-}*/
+}
+
+.article {
+   text-align: center;
+   margin: 2rem 2rem;
+}
 article {
-    text-align: center;
-    padding-bottom: 5rem;
-    width: 50%;
-    border-radius: 25px;
-
+    margin: 4rem 0;
 }
-.grid > article {
-    background-color: #8ca0ff;
-    width: 1fr;
-    height: 1fr;
-    text-align: center;
-    padding: 6rem 6rem;
-    /*width: 50%;*/
-  }
+
 
 h2 {
     font-family: OpenSans-Bold;
     color: aliceblue;
     font-size: 2.2rem;
-    padding: 2rem 2rem;
+    padding: 0 2rem;
 
 
 
@@ -235,7 +213,7 @@ article p {
 }
 
 button {
-  border: 1px solid rgba(240, 248, 255, 0.633);
+  border: 1px solid rgba(240, 248, 255, 0);
   border-radius: 1rem;
   background-color: rgba(255, 255, 255, 0.211);
   font-family: OpenSans-Regular;
@@ -246,25 +224,23 @@ button {
 }
 
 .block_video {
-    /*background-color: aquamarine;*/
-    /*background-color: #324158;*/
-    background-image: url(../images/blockvid.webp);
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    height: 50%;
+    background-color: rgba(50, 65, 88, 0.9);
+    /*width: 50%;
+    height: 50%;*/
     border-radius: 25px;
+    min-height: 30rem;
+    text-align: center;
+    color: #324158;
 }
 
 .block_video2 {
-    /*background-color: aquamarine;*/
-    /*background-color: #417485;*/
-    background-image: url(../images/blockvid2.webp);
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    height: 50%;
+    background-color: rgba(65, 116, 133, 0.9);
+    /*width: 50%;
+    height: 50%;*/
     border-radius: 25px;
+    min-height: 30rem;
+    text-align: center;
+    color: #417485;
 }
 .dates {
     /*margin-top: 2.5rem;*/
@@ -301,14 +277,15 @@ button {
 .card_sem {
     min-width: 18rem;
     min-height: 30rem;
-    border: 1px solid aliceblue;
-
+    border: 1px solid rgba(65, 116, 133, 0.5);
+    border-radius: 1.5rem;
 }
 
 .card_stg {
     min-width: 18rem;
     min-height: 30rem;
-    border: 1px solid aliceblue;
+    border: 1px solid rgba(50, 65, 88, 0.5);
+    border-radius: 1.5rem;
 }
 .faq {
     margin: 0 auto;

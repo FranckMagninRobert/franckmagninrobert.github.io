@@ -219,8 +219,15 @@ button {
   color: rgba(56, 50, 50, 0.652);
   font-size: 2rem;
   padding: 1rem 1rem;
-
+  transition-property: background-color, color;
+transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
 }
+
+button:hover {
+    background-color: rgba(50, 65, 88, 0.8);
+    color: rgb(255, 255, 255);
+  }
 
 .block_video {
     background-color: rgba(50, 65, 88, 0.9);

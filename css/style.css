@@ -45,7 +45,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-    border-bottom:  1px solid rgba(65, 116, 133, 0.9);
+    /*border-bottom:  1px solid rgba(65, 116, 133, 0.9);*/
 }
 .header_contener {
     display: flex;
@@ -79,14 +79,9 @@ ul {
 
 }
 
-/*nav ul li a {
-    background-color: burlywood;
-    font-family: OpenSans-Bold;
-    font-size: 1.5rem;
-    color: aliceblue;
-    padding: 1.6rem 1.6rem;
-    text-transform: capitalize;
-}*/
+nav  {
+    background-color: #324158;
+}
 
 .nav-item {
     font-family: OpenSans-Bold;
@@ -107,8 +102,8 @@ a {
 
 svg {
     /*position: sticky;*/
-    width: 8rem;
-    height: 8rem;
+    width: 6.8rem;
+    height: 6.8rem;
 
 }
 
@@ -340,7 +335,7 @@ footer p {
     background-color: #324158;
     top: 0;
     right: 0;
-    animation: heartRateIn 2.5s linear infinite;
+    animation: heartRateIn 3.5s linear infinite;
   }
 
   .fade-out {
@@ -349,7 +344,7 @@ footer p {
     height: 100%;
     top: 0;
     left: -120%;
-    animation: heartRateOut 2.5s linear infinite;
+    animation: heartRateOut 3.5s linear infinite;
     background: rgba(50, 65, 88, 1);
     background: -moz-linear-gradient(left, rgba(50, 65, 88, 1) 0%, rgba(50, 65, 88, 1) 50%, rgba(50, 65, 88, 0) 100%);
     background: -webkit-linear-gradient(left, rgba(50, 65, 88, 1) 0%, rgba(50, 65, 88, 1) 50%, rgba(50, 65, 88, 0) 100%);

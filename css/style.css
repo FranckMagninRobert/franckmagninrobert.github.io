@@ -173,23 +173,22 @@ main {
 
 }
 .video {
-   
-    display: flex;
     margin: 3rem 4.5rem;
-
 }
+
+
 
 .video_container {
-    display: contents;
-
-}
-
-.article {
+    display: flex;
+    flex-wrap: wrap;
    text-align: center;
-   margin: 2rem 2rem;
+   justify-content: center;
+   gap: 3rem;
 }
+
 article {
     margin: 4rem 0;
+    max-width: 40rem;
 }
 
 
@@ -229,6 +228,7 @@ button {
     height: 50%;*/
     border-radius: 25px;
     min-height: 30rem;
+    min-width: 40rem;
     text-align: center;
     color: #324158;
 }
@@ -239,6 +239,7 @@ button {
     height: 50%;*/
     border-radius: 25px;
     min-height: 30rem;
+    min-width: 40rem;
     text-align: center;
     color: #417485;
 }
@@ -276,14 +277,14 @@ button {
 }
 .card_sem {
     min-width: 18rem;
-    min-height: 30rem;
+    min-height: 25rem;
     border: 1px solid rgba(65, 116, 133, 0.5);
     border-radius: 1.5rem;
 }
 
 .card_stg {
     min-width: 18rem;
-    min-height: 30rem;
+    min-height: 25rem;
     border: 1px solid rgba(50, 65, 88, 0.5);
     border-radius: 1.5rem;
 }

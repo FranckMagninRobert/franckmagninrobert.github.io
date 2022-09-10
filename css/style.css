@@ -150,7 +150,7 @@ main {
   /*top: 50%;*/
   /*width: 100%;*/
   /*text-align: center;*/
-  /*margin-top: -25px;*/
+  margin-top: -2rem;
 }
 
 .carousel_slide--plight {
@@ -259,9 +259,6 @@ button:hover {
     font-size: 2rem;
     padding: 3rem 1.5rem;
     text-transform: uppercase;
-    
-
-
 }
 
 .card_container {

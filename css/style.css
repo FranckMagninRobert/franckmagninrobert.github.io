@@ -49,7 +49,7 @@ header {
     z-index: 1;
    
 }
-.header_contener {
+.header_container {
     display: flex;
     align-items: center;
 }
@@ -104,17 +104,8 @@ a {
     color: aliceblue;
 }
 
-svg {
-    width: 6.8rem;
-    height: 6.8rem;
 
-}
 
-svg {
-    width: 6.8rem;
-    height: 6.8rem;
-
-}
 
 .nav-item:hover {
     background-color: #417485;
@@ -125,11 +116,16 @@ ul li:nth-child(4n) {
     text-transform: uppercase;
 
 }
-@media screen and (max-width: 65rem) {
+.hamburger_svg {
+    display:none;
+}
+@media screen and (max-width: 891px) {
     ul {
         display: none;
     }
-    
+    .header_container {
+        max-width: 29rem;
+    }
     header h1 {
         font-size: 2rem;
         line-height: 2.5rem;
@@ -142,8 +138,8 @@ ul li:nth-child(4n) {
     body {
     
         background: linear-gradient(0.40turn, #417485, #fcc8a0 );
-        background-size: 100%;
-        animation: none;
+        background-size: 150% 150%;
+        animation: gradient 15s ease infinite;
     }
     .carousel-container {
         display: none;
@@ -151,6 +147,10 @@ ul li:nth-child(4n) {
     }
     main {
         max-width: 37.5rem;
+    }
+    .hamburger_svg {
+        
+        display: contents;
     }
 
 }
@@ -291,10 +291,11 @@ button:hover {
 }
 
 .h_dates { 
-    font-family: OpenSans-Regular;
+    font-family: OpenSans-Bold;
     color: aliceblue;
     font-size: 2rem;
     text-transform: uppercase;
+    padding: 2.5rem 0 1rem 0;
 }
 
 

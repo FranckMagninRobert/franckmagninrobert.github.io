@@ -116,9 +116,11 @@ ul li:nth-child(4n) {
     text-transform: uppercase;
 
 }
+
 .hamburger_svg {
     display:none;
 }
+
 @media screen and (max-width: 891px) {
     ul {
         display: none;

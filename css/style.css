@@ -29,7 +29,7 @@ body {
     
 
 
-body>div {
+body > div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -75,12 +75,16 @@ header h1 {
 ul {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 3rem;
+    padding-right: 1.5rem;
 
 }
 
-nav  {
+.nav_bar {
     background-color: #324158;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-item {
@@ -101,7 +105,12 @@ a {
 }
 
 svg {
-    /*position: sticky;*/
+    width: 6.8rem;
+    height: 6.8rem;
+
+}
+
+svg {
     width: 6.8rem;
     height: 6.8rem;
 
@@ -116,6 +125,17 @@ ul li:nth-child(4n) {
     text-transform: uppercase;
 
 }
+@media screen and (max-width: 650px) {
+    ul {
+        display: none;
+    }
+    
+    .heart-rate {
+        display: none;
+    }
+}
+
+/*Fin Header + Nav*/
 
 main {
     display: flex;  
@@ -318,10 +338,10 @@ footer p {
 }
 
 .heart-rate {
-    width: 150px;
+    width: 73px;
     height: 73px;
     position: relative;
-    margin: 20px auto;
+    margin: 1.5rem auto;
   }
 
 

@@ -8,6 +8,7 @@ body {
     background: linear-gradient(0.40turn, #417485, #fcc8a0 );
     background-size: 300% 300%;
     animation: gradient 15s ease infinite;
+    
 
     
 }
@@ -30,7 +31,13 @@ body {
     flex-direction: column;
     
 }
-
+main {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 95rem;
+    
+}
 
 header {
     display: flex;
@@ -118,7 +125,7 @@ ul li:nth-child(4n) {
     text-transform: uppercase;
 
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 65rem) {
     ul {
         display: none;
     }
@@ -137,20 +144,20 @@ ul li:nth-child(4n) {
         background: linear-gradient(0.40turn, #417485, #fcc8a0 );
         background-size: 100%;
         animation: none;
+    }
+    .carousel-container {
+        display: none;
 
-
+    }
+    main {
+        max-width: 37.5rem;
+    }
 
 }
-}
+
 /*Fin Header + Nav*/
 
-main {
-    display: flex;  
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 95rem;
-    
-}
+
 
 .accueil {
     /*background: linear-gradient(0.25turn, #417485,#fcc8a0);*/
@@ -243,8 +250,8 @@ button {
   font-size: 2rem;
   padding: 1rem 1rem;
   transition-property: background-color, color;
-transition-timing-function: ease-in-out;
-    transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
 }
 
 button:hover {
@@ -258,7 +265,7 @@ button:hover {
     height: 50%;*/
     border-radius: 25px;
     min-height: 30rem;
-    min-width: 40rem;
+    min-width: 35rem;
     text-align: center;
     color: #324158;
 }
@@ -269,7 +276,7 @@ button:hover {
     height: 50%;*/
     border-radius: 25px;
     min-height: 30rem;
-    min-width: 40rem;
+    min-width: 35rem;
     text-align: center;
     color: #417485;
 }
@@ -278,8 +285,19 @@ button:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
+
+.h_dates { 
+    font-family: OpenSans-Regular;
+    color: aliceblue;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
  .h_card { 
     font-family: OpenSans-Regular;
     color: aliceblue;
@@ -303,14 +321,14 @@ button:hover {
 
 }
 .card_sem {
-    min-width: 18rem;
+    min-width: 15rem;
     min-height: 25rem;
     border: 1px solid rgba(65, 116, 133, 0.5);
     border-radius: 1.5rem;
 }
 
 .card_stg {
-    min-width: 18rem;
+    min-width: 15rem;
     min-height: 25rem;
     border: 1px solid rgba(50, 65, 88, 0.5);
     border-radius: 1.5rem;

@@ -4,18 +4,14 @@ html {
 
 }
 body {
-    /*display: flex;*/
-    /*height: 100vh;*/
-    /*flex-direction: column;*/
- 
-        background: linear-gradient(0.40turn, #417485, #fcc8a0 );
-        background-size: 350% 350%;
-        animation: gradient 25s ease infinite;
-        min-height: 100vh;
-    }
+    
+    background: linear-gradient(0.40turn, #417485, #fcc8a0 );
+    background-size: 300% 300%;
+    animation: gradient 15s ease infinite;
 
     
-    @keyframes gradient {
+}
+@keyframes gradient {
         0% {
             background-position: 0% 50%;
         }
@@ -25,27 +21,26 @@ body {
         100% {
             background-position: 0% 50%;
         }
-    }
-    
-
-
-body > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-   /* background: linear-gradient(0.25turn, #417485,#fcc8a0);*/
-
 }
+
+.background_container {
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
 header {
     display: flex;
     background-color: #324158;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1;
-    /*border-bottom:  1px solid rgba(65, 116, 133, 0.9);*/
+   
 }
 .header_contener {
     display: flex;
@@ -54,12 +49,10 @@ header {
    
 
 header h1 {
-    /*background-color: aquamarine;*/
     color: aliceblue;
     font-family: OpenSans-ExtraBold;
     font-size: 2rem;
     padding-right: 1.5rem;
-    /*margin-left: 2rem;*/
     line-height: 3rem;
     z-index: 1;
 }
@@ -130,18 +123,32 @@ ul li:nth-child(4n) {
         display: none;
     }
     
+    header h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        z-index: 1;
+        padding-right: 0rem;
+    }
     .heart-rate {
         display: none;
     }
-}
+    body {
+    
+        background: linear-gradient(0.40turn, #417485, #fcc8a0 );
+        background-size: 100%;
+        animation: none;
 
+
+
+}
+}
 /*Fin Header + Nav*/
 
 main {
     display: flex;  
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1000px;
+    max-width: 95rem;
     
 }
 

@@ -154,7 +154,7 @@
 }
 .carousel__indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: 2rem;
   width: 100%;
   text-align: center;
 }
@@ -229,7 +229,8 @@ body {
   color: #fff;
 }*/
 .carousel-container {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .my-carousel {

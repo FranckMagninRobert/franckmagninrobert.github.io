@@ -110,7 +110,6 @@ a {
 
 .nav-item:hover {
     background-color: #417485;
-    color: aliceblue;
   }
 
 ul li:nth-child(4n) {
@@ -163,9 +162,6 @@ ul li:nth-child(4n) {
         padding: 2.5rem 2rem;
         margin: 0.4rem 0.4rem;
         border-radius: 2rem;
-        transition-property: background-color, color;
-        transition-timing-function: ease-in-out;
-        transition-duration: 300ms;
         color: aliceblue;
         
     }

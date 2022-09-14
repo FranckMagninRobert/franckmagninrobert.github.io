@@ -3,8 +3,8 @@ const navLinks = document.querySelector(".nav_all")
 //navLinks.classList.toggle('light-menu')
 
 menuHamburger.addEventListener('click',()=>{
-    navLinks.classList.replace('nav_all', 'nav_all_move');
-    navLinks.classList.toggle('light-menu');
+    navLinks.classList.replace('nav_all', 'nav_all_move')
+    navLinks.classList.toggle('light-menu')
 })
 
 

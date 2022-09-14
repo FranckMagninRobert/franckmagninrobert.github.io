@@ -180,6 +180,10 @@ ul li:nth-child(4n) {
     .heart-rate {
         display: none;
     }
+    .carousel {
+        height: 53rem;
+    }
+
     /*
     body {
     

@@ -489,8 +489,8 @@ footer p {
     height: 3rem;
     line-height: 2rem;
     border-bottom: 1px solid #324158;
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
+    border-radius: 0.5rem;
+    
 }
 
 .ac-container {
@@ -547,11 +547,10 @@ footer p {
 .ac-container article p {
     font-style: normal;
     color: aliceblue;
-    line-height: 23px;
-    font-size: 1.5rem;
+    line-height: 2.3rem;
+    
     padding: 2rem;
-    /*text-shadow: 1px 1px 1px rgba(255,255,255,0.8);*/
-    font: normal normal 1.5rem 'OpenSans-Regular';
+   
 }
 
 .ac-container input:checked ~ article {
@@ -564,14 +563,14 @@ footer p {
 }
 
 .ac-container input:checked ~ article.ac-small {
-    height: 14rem;
+    height: 19rem;
 }
 
 .ac-container input:checked ~ article.ac-medium {
-    height: 21rem;
+    height: 28rem;
 }
 
 .ac-container input:checked ~ article.ac-large {
     
-    height: 26rem;
+    height: 38rem;
 }

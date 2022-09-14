@@ -85,6 +85,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 68px;
 }
 
 .nav-item {
@@ -127,7 +128,13 @@ ul li:nth-child(4n) {
 }
 
 @media screen and (max-width: 891px) {
+    
     .nav_all {
+        display: none;
+    }
+    
+    .nav_all_move {
+        margin-left: -100vw;
         top: 0;
         left: 0;
         width: 100%;
@@ -139,7 +146,6 @@ ul li:nth-child(4n) {
         justify-content: center;
         align-items: center;
         z-index: 2;
-        margin-left: -100vw;
         transition: all 0.5s ease;
     }
     ul {
@@ -178,13 +184,14 @@ ul li:nth-child(4n) {
     .heart-rate {
         display: none;
     }
+    /*
     body {
     
         background: linear-gradient(0.40turn, #417485, #fcc8a0 );
         background-size: 150% 150%;
         animation: gradient 15s ease infinite;
     }
-   
+   */
     main {
         max-width: 37.5rem;
     }
@@ -407,7 +414,7 @@ footer p {
 
 .heart-rate {
     width: 73px;
-    height: 73px;
+    height: 68px;
     position: relative;
     margin: 1.5rem auto;
   }
